@@ -12,6 +12,7 @@ services:
     build: ./docker/php-fpm/
     volumes:
       - ./src:/var/www/html
+    working_dir: /var/www/html
   db:
     build: ./docker/mysql
     ports:
